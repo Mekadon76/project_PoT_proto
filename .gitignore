@@ -29,3 +29,9 @@ obj/
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.wav
+Assets/UnityChan/Voice/
+Assets/UnityChan/
+Assets/BezierPathCreator/
+Assets/Dreamteck/
+Assets/Textures/UI_temp.png
