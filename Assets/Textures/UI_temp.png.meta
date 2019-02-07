@@ -1,7 +1,15 @@
 fileFormatVersion: 2
 guid: 98bb8e5853ed16a49bef9507c6546a19
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: UI_temp_0
+    21300002: UI_temp_1
+    21300004: UI_temp_2
+    21300006: UI_temp_3
+    21300008: UI_temp_4
+    21300010: UI_temp_5
+    21300012: UI_temp_6
+    21300014: UI_temp_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -104,11 +112,171 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI_temp_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 941
+        width: 110
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43633a36c0263b84da607a469b84379d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_1
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 951
+        width: 680
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03640518fc89a75448a03ebc48fba71a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_2
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 781
+        width: 140
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3682a92e458c02749920538d546442d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 871
+        width: 670
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f54f7f88e8c764aa053a7510f8a73b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_4
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 474
+        width: 290
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 304696b4950286b4eb925729169bae87
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 367
+        width: 397
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4a177033869bea439840fc143e80b0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_6
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 367
+        width: 273
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5c7d51c0934d5049aff199ac788b368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_temp_7
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 20
+        width: 698
+        height: 301
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ab65fe9f3d4ff4cad29d42d3a2d617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: ea96c62ea89e0af478d067f6eea4ed92
     vertices: []
     indices: 
     edges: []
