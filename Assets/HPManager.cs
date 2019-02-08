@@ -7,77 +7,87 @@ public class HPManager : MonoBehaviour
 {
     private Slider healthbar;
     private Slider SpeedSlider;
+    private BoosterController boostercon;
 
-    public int Health;
-    public float HPtimer;
-
-    // Start is called before the first frame update
+    public float Health;
+    public float BoosterChargeAmt;
+    public float Booster;
 
     private void Awake()
     {
         healthbar = GameObject.Find("UIManager/Health").GetComponent<Slider>();
         SpeedSlider = GameObject.Find("UIManager/SpeedSlider").GetComponent<Slider>();
-
+        boostercon = GameObject.Find("UIManager/Booster").GetComponent<BoosterController>();
     }
 
     void Start()
     {
-
         init();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        SliderHP();
+        healthbar.value = Health;
+
+        if(Health > healthbar.maxValue)
+        {
+            Health = healthbar.maxValue;
+        }
+        if(Health < 0)
+        {
+            Health = 0;
+        }
+
+        boostercon.BoosterFill = Booster;
+
+        if(Booster > 100)
+        {
+            Booster = 100;
+        }
     }
 
+    private void FixedUpdate()
+    {
+        SliderHP();
+        Booster += BoosterChargeAmt * Time.deltaTime;
+    }
 
+    //게이지값 초기화
     private void init()
     {
+        SpeedSlider.value = 2;
         healthbar.maxValue = Health;
         healthbar.value = Health;
+        boostercon.BoosterFill = 0;
     }
 
     void SliderHP()
     {
-        bool IsHPchanged = false;
-
-        if (!IsHPchanged)
+        switch (SpeedSlider.value)
         {
-            switch (SpeedSlider.value)
-            {
-                case 0:
-                    print("2");
-                    StartCoroutine(HPChange(2));
-                    IsHPchanged = true;
-                    break;
-                case 1:
-                    print("1");
-                    StartCoroutine(HPChange(1));
-                    IsHPchanged = true;
-                    break;
-                case 2:
-                    IsHPchanged = true;
-                    break;
-                case 3:
-                    print("-1");
-                    StartCoroutine(HPChange(-1));
-                    IsHPchanged = true;
-                    break;
-                case 4:
-                    print("-2");
-                    StartCoroutine(HPChange(-2));
-                    IsHPchanged = true;
-                    break;
-            }
+            case 0:
+                HpGain(18);
+                break;
+
+            case 1:
+                HpGain(8);
+                break;
+
+            case 2:
+                break;
+
+            case 3:
+                HpGain(-10);
+                break;
+
+            case 4:
+                HpGain(-20);
+                break;
         }
     }
 
-    IEnumerator HPChange(int a)
+    void HpGain(float amount)
     {
-            healthbar.value += a;
-            Debug.Log(a + "만큼 닳고 있습니다!");
-            yield return new WaitForSeconds(HPtimer);
+        Health += amount * Time.deltaTime;
     }
 }
